@@ -50,7 +50,7 @@ const Navbar = () => {
       </ul>
 
       {/* icon menu */}
-      <div className="flex fixed flex-col top-[35%] left-1">
+      <div className="flex fixed flex-col top-[30%] left-1">
         <ul className="flex flex-col gap-5">
           <li className="relative group">
             <div className="absolute top-0 left-0 ml-6 w-40 h-full bg-gray-700 rounded-full transform opacity-0 group-hover:opacity-100 transition duration-100">
