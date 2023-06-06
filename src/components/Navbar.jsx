@@ -8,6 +8,12 @@ const Navbar = () => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
 
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleHover = () => {
+    setIsHovered(!isHovered);
+  };
+
   return (
     <div className="fixed w-full h-20 flex justify-between items-center px-4 bg-[#0e141f] text-white">
       <div>
@@ -50,51 +56,31 @@ const Navbar = () => {
       </ul>
 
       {/* icon menu */}
-      <div className="flex fixed flex-col top-[30%] left-1">
+      <div className="flex fixed top-[30%] left-1">
         <ul className="flex flex-col gap-5">
-          <li className="relative group">
-            <div className="absolute top-0 left-0 ml-6 w-40 h-full bg-gray-700 rounded-full transform opacity-0 group-hover:opacity-100 transition duration-100">
-              <a className="flex ml-10 items-center justify-center h-full text-white text-lg font-bold">
-                LinkedIn
-              </a>
-            </div>
-            <div className="w-16 h-16 bg-gray-700 rounded-full flex items-center justify-center transition-all transform">
+          <li>
+            <div className="w-16 h-16 bg-gray-700 rounded-full flex items-center justify-center transform hover:w-40 hover:duration-200 duration-200">
               <a className="text-white text-lg font-bold">
                 <FaLinkedin size={30} />
               </a>
             </div>
           </li>
-          <li className="relative group">
-            <div className="absolute top-0 left-0 ml-6 w-40 h-full bg-gray-700 rounded-full transform opacity-0 group-hover:opacity-100 transition duration-100">
-              <a className="flex ml-10 items-center justify-center h-full text-white text-lg font-bold">
-                GitHub
-              </a>
-            </div>
-            <div className="w-16 h-16 bg-gray-700 rounded-full flex items-center justify-center transition-all transform">
+          <li>
+            <div className="w-16 h-16 bg-gray-700 rounded-full flex items-center justify-center transform hover:w-40 hover:duration-200 duration-200">
               <a className="text-white text-lg font-bold">
                 <FaGithub size={30} />
               </a>
             </div>
           </li>
-          <li className="relative group">
-            <div className="absolute top-0 left-0 ml-6 w-40 h-full bg-gray-700 rounded-full transform opacity-0 group-hover:opacity-100 transition duration-100">
-              <a className="flex ml-7 items-center justify-center h-full text-white text-lg font-bold">
-                Email
-              </a>
-            </div>
-            <div className="w-16 h-16 bg-gray-700 rounded-full flex items-center justify-center transition-all transform">
+          <li>
+            <div className="w-16 h-16 bg-gray-700 rounded-full flex items-center justify-center transform hover:w-40 hover:duration-200 duration-200">
               <a className="text-white text-lg font-bold">
                 <HiOutlineMail size={30} />
               </a>
             </div>
           </li>
-          <li className="relative group">
-            <div className="absolute top-0 left-0 ml-6 w-40 h-full bg-gray-700 rounded-full transform opacity-0 group-hover:opacity-100 transition duration-100">
-              <a className="flex ml-10 items-center justify-center h-full text-white text-lg font-bold">
-                Resume
-              </a>
-            </div>
-            <div className="w-16 h-16 bg-gray-700 rounded-full flex items-center justify-center transition-all transform">
+          <li>
+            <div className="w-16 h-16 bg-gray-700 rounded-full flex items-center justify-center transform hover:w-40 hover:duration-200 duration-200">
               <a className="text-white text-lg font-bold">
                 <MdOutlineContactPage size={30} />
               </a>
