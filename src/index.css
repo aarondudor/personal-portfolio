@@ -14,3 +14,19 @@
     @apply cursor-pointer;
   }
 }
+
+.content-div {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+
+.content-div:hover {
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 1),
+    rgba(63, 81, 181, 1)
+  ) !important;
+  border-radius: 10px;
+}
