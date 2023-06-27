@@ -1,10 +1,8 @@
 import React, { useState } from "react";
-import Logo from "../assets/AD-logo-transparent.png";
 import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { MdOutlineContactPage } from "react-icons/md";
 import { Link as LinkScroll } from "react-scroll";
-import { Link } from "react-router-dom";
 import Resume from "../assets/Resume_SoftwareDev.pdf";
 
 const Navbar = () => {
@@ -27,6 +25,9 @@ const Navbar = () => {
   const handleHover4 = () => setIsHovered4(true);
   const handleHoverOff4 = () => setIsHovered4(false);
 
+  const openMailCleint = (url) => {
+    window.location.href = "mailto:" + url;
+  };
   const openInNewTab = (url) => {
     window.open(url, "_blank", "noreferrer");
   };
@@ -169,6 +170,7 @@ const Navbar = () => {
             <div
               onMouseEnter={handleHover3}
               onMouseLeave={handleHoverOff3}
+              onClick={() => openMailCleint("aarondudor@gmail.com")}
               className="w-16 h-16 bg-indigo-400 rounded-full flex items-center justify-center transform hover:w-32 hover:duration-200 hover:bg-indigo-600 duration-200"
             >
               <a className="text-xl font-bold">
