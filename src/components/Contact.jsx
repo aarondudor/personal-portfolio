@@ -1,36 +1,71 @@
-import React, { useState } from "react";
+import React from "react";
+import { useForm, ValidationError } from "@formspree/react";
 
 const Contact = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-  const [status, setStatus] = useState("");
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setStatus("Sending...");
-
-    try {
-      const response = await fetch("/send_email", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ name, email, message }),
-      });
-
-      if (response.ok) {
-        setStatus("Email sent successfully. We will get back to you soon.");
-      } else {
-        throw new Error("Error sending email.");
-      }
-    } catch (error) {
-      setStatus("Error sending email. Please try again later.");
-    }
-  };
+  const [state, handleSubmit] = useForm("mzblpkzp");
+  if (state.succeeded) {
+    return (
+      <div
+        id="contact"
+        className="w-full h-screen bg-[#0e141f] flex justify-center items-center p-9"
+      >
+        <p className="text-white font-bold text-xl text-center md:text-3xl">
+          Your form has been submitted, thank you for reaching out!
+        </p>
+      </div>
+    );
+  }
 
   return (
     <div
+      id="contact"
+      className="w-full h-screen bg-[#0e141f] text-black flex justify-center items-center p-9"
+    >
+      <form
+        onSubmit={handleSubmit}
+        className="flex flex-col max-w-[600px] w-full"
+      >
+        <div className="pb-8">
+          <label
+            htmlFor="email"
+            className="text-3xl md:text-5xl font-bold inline border-b-8 border-indigo-500 text-white"
+          >
+            Contact
+          </label>
+        </div>
+        <input
+          id="email"
+          type="email"
+          name="email"
+          placeholder="Email"
+          className="bg-white p-2"
+          required
+        />
+        <ValidationError prefix="Email" field="email" errors={state.errors} />
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Message"
+          className="bg-white p-2 mt-2"
+          rows="6"
+        />
+        <ValidationError
+          prefix="Message"
+          field="message"
+          errors={state.errors}
+        />
+        <button
+          type="submit"
+          disabled={state.submitting}
+          className="text-white font-bold text-md border-2 px-6 py-3 mt-4 mx-auto flex items-center duration-300 hover:bg-indigo-500 hover:border-indigo-500 hover:duration-300"
+        >
+          Submit
+        </button>
+      </form>
+    </div>
+  );
+};
+/*<div
       id="contact"
       className="w-full h-screen bg-[#0e141f] text-black flex justify-center items-center p-9"
     >
@@ -73,6 +108,7 @@ const Contact = () => {
         ></textarea>
         <button
           type="submit"
+          disabled={state.submitting}
           className="text-white font-bold text-md border-2 px-6 py-3 mt-4 mx-auto flex items-center duration-300 hover:bg-indigo-500 hover:border-indigo-500 hover:duration-300"
         >
           Submit
@@ -80,7 +116,6 @@ const Contact = () => {
       </form>
       {status && <p className="mt-4 text-center">{status}</p>}
     </div>
-  );
-};
+  */
 
 export default Contact;

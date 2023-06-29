@@ -17,11 +17,11 @@ const Projects = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 px-16 py-3">
           <div
             style={{ backgroundImage: `url(${TestImg})` }}
-            className="shadow-indigo-500 shadow group container rounded-md flex justify-center items-center mx-auto content-div h-36 w-3/4 sm:w-full sm:h-60"
+            className="shadow-indigo-500 shadow group container rounded-md flex justify-center items-center mx-auto text-center content-div h-36 w-3/4 sm:w-full sm:h-60"
           >
             <div className="opacity-0 group-hover:opacity-100 duration-100 hover:duration-100">
               <span className="text-md sm:text-xl font-bold text-white tracking-wider">
-                React JS Application
+                Office Hour Hacks
               </span>
               <div className="pt-3 sm:pt-8 text-center">
                 <a href="/">
@@ -39,11 +39,11 @@ const Projects = () => {
           </div>
           <div
             style={{ backgroundImage: `url(${TestImg})` }}
-            className="shadow-indigo-500 shadow group container rounded-md flex justify-center items-center mx-auto content-div h-36 w-3/4 sm:w-full sm:h-60"
+            className="shadow-indigo-500 shadow group container rounded-md flex justify-center items-center text-center mx-auto content-div h-36 w-3/4 sm:w-full sm:h-60"
           >
             <div className="opacity-0 group-hover:opacity-100 duration-100 hover:duration-100">
               <span className="text-md sm:text-xl font-bold text-white tracking-wider">
-                React JS Application
+                Graphics Town
               </span>
               <div className="pt-3 sm:pt-8 text-center">
                 <a href="/">

@@ -13,21 +13,21 @@ const About = () => {
         </div>
         <div className="max-w-[1000px] w-full px-9 text-l md:text-2xl">
           <div className="pb-4">
-            <p>Hi there! Welcome to my portfolio!</p>
+            <p>Welcome to my portfolio!</p>
           </div>
           <div>
             <p>
               I am a recent graduate from the University of Wisconsin-Madison
-              with a B.S. in Computer Science. I am passionate about building
-              programs and creating digital experiences. Lorem ipsum dolor sit
-              amet, consectetur adipisicing elit. Voluptates illo tempore ullam,
-              nam eligendi, ex, doloremque voluptatum dolorum cupiditate
-              repellat quia veniam facilis optio nisi! Aliquam saepe velit
-              libero labore. Lorem ipsum dolor sit amet consectetur adipisicing
-              elit. Reiciendis ipsum commodi odit officiis inventore modi, sint
-              dolor est nam enim vitae vero corrupti! Delectus repudiandae
-              harum, magni dolores repellat modi?
+              with a B.S. in Computer Science and a Certificate in Digital
+              Studies. I am passionate about building programs and creating
+              digital experiences that bring new innovation and excitement.
+              Currently, I am very interested in front end development, however
+              I am open to any opportunity to learn and grow in my software
+              development career.
             </p>
+          </div>
+          <div className="pt-4">
+            <p>Feel free to contact me with any opportunities!</p>
           </div>
         </div>
       </div>
