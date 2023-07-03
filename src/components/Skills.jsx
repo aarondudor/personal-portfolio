@@ -15,7 +15,7 @@ const Skills = () => {
   return (
     <div id="skills" className="w-full h-screen bg-[#0e141f] text-indigo-50">
       <div className="max-w-[1000px] mx-auto flex flex-col justify-center w-full h-full">
-        <div className="justify-center items-center px-9">
+        <div className="px-9">
           <p className="md:text-5xl text-3xl font-bold inline border-b-8 border-indigo-500 text-white">
             Skills
           </p>

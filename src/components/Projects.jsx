@@ -1,5 +1,5 @@
 import React from "react";
-import TestImg from "../assets/ad-logo-new.jpg";
+import TestImg from "../assets/logo.png";
 
 const Projects = () => {
   return (
@@ -21,7 +21,7 @@ const Projects = () => {
           >
             <div className="opacity-0 group-hover:opacity-100 duration-100 hover:duration-100">
               <span className="text-md sm:text-xl font-bold text-white tracking-wider">
-                Office Hour Hacks
+                Office Hour Queue
               </span>
               <div className="pt-3 sm:pt-8 text-center">
                 <a href="/">
@@ -29,7 +29,10 @@ const Projects = () => {
                     Demo
                   </button>
                 </a>
-                <a href="/">
+                <a
+                  href="https://github.com/aarondudor/office-hours-queue"
+                  target="_blank"
+                >
                   <button className="rounded-lg px-4 py-3 m-2 bg-white text-indigo-500 font-bold text-sm sm:text-lg hover:text-white hover:bg-indigo-500 hover:duration-100 duration-100">
                     Code
                   </button>
