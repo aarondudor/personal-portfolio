@@ -26,9 +26,9 @@ const Projects = () => {
                 Office Hour Queue
               </span>
               <div className="pt-3 sm:pt-8 text-center">
-                <a href="/">
+                <a href="">
                   <button
-                    className="rounded-lg px-4 py-3 m-2 bg-white text-indigo-500 font-bold text-sm sm:text-lg hover:text-white hover:bg-indigo-500 hover:duration-100 duration-100 disabled:opacity-50"
+                    className="rounded-lg px-4 py-3 m-2 bg-white text-indigo-500 font-bold text-sm sm:text-lg hover:cursor-not-allowed disabled:opacity-50"
                     disabled
                   >
                     Demo
