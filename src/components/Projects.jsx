@@ -1,5 +1,6 @@
 import React from "react";
 import GTown from "../assets/graphics_town.png";
+import OOH from "../assets/office_hours_queue.png";
 
 const Projects = () => {
   return (
@@ -17,7 +18,7 @@ const Projects = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 px-16 py-3">
           <div
-            style={{ backgroundImage: `url(${GTown})` }}
+            style={{ backgroundImage: `url(${OOH})` }}
             className="shadow-indigo-500 shadow group container rounded-md flex justify-center items-center mx-auto text-center content-div h-36 w-3/4 sm:w-full sm:h-60"
           >
             <div className="opacity-0 group-hover:opacity-100 duration-100 hover:duration-100">
@@ -26,7 +27,10 @@ const Projects = () => {
               </span>
               <div className="pt-3 sm:pt-8 text-center">
                 <a href="/">
-                  <button className="rounded-lg px-4 py-3 m-2 bg-white text-indigo-500 font-bold text-sm sm:text-lg hover:text-white hover:bg-indigo-500 hover:duration-100 duration-100">
+                  <button
+                    className="rounded-lg px-4 py-3 m-2 bg-white text-indigo-500 font-bold text-sm sm:text-lg hover:text-white hover:bg-indigo-500 hover:duration-100 duration-100 disabled:opacity-50"
+                    disabled
+                  >
                     Demo
                   </button>
                 </a>
