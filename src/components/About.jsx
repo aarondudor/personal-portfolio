@@ -16,11 +16,10 @@ const About = () => {
             a B.S. in Computer Science and a Certificate in Digital Studies. I
             am passionate about building programs and creating digital
             experiences that bring new innovation and excitement. I have always
-            had a creative eye and have been particularly interested in front
-            end development, however I am open to any opportunity to learn and
-            grow in my software development career. I am excited to take my
-            first step into the field and begin my career in software
-            development!
+            had a creative eye and have been particularly interested in frontend
+            development, however I am open to any opportunity to learn and grow
+            in my software development career. I am excited to take my first
+            step into the field and begin my career in software development!
           </p>
           <p className="pt-4">
             Feel free to contact me with any opportunities!

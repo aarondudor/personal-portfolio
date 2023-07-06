@@ -9,7 +9,7 @@ const Projects = () => {
           <p className="text-3xl md:text-5xl font-bold inline border-b-8 border-indigo-500 text-white">
             Projects
           </p>
-          <p className="pt-8 md:pt-12 pb-6 text-l md:text-2xl w-full">
+          <p className="pt-8 pb-6 text-l md:text-xl w-full">
             These are a few notable projects that I have worked on. Hover over
             the images to view the demo or code behind the projects.
           </p>
@@ -51,7 +51,7 @@ const Projects = () => {
               </span>
               <div className="pt-3 sm:pt-8 text-center">
                 <a
-                  href="https://aarondudor.github.io/graphics_town/for_students/final-grtown.html"
+                  href="https://aarondudor.github.io/graphics-town/for_students/final-grtown.html"
                   target="_blank"
                 >
                   <button className="rounded-lg px-4 py-3 m-2 bg-white text-indigo-500 font-bold text-sm sm:text-lg hover:text-white hover:bg-indigo-500 hover:duration-100 duration-100">
@@ -59,7 +59,7 @@ const Projects = () => {
                   </button>
                 </a>
                 <a
-                  href="https://github.com/aarondudor/graphics_town"
+                  href="https://github.com/aarondudor/graphics-town"
                   target="_blank"
                 >
                   <button className="rounded-lg px-4 py-3 m-2 bg-white text-indigo-500 font-bold text-sm sm:text-lg hover:text-white hover:bg-indigo-500 hover:duration-100 duration-100">

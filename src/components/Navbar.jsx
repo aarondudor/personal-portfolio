@@ -3,7 +3,7 @@ import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { MdOutlineContactPage } from "react-icons/md";
 import { Link as LinkScroll } from "react-scroll";
-import Resume from "../assets/Resume_SoftwareDev.pdf";
+import Resume from "../assets/Resume_AaronDudor_2023.pdf";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -48,6 +48,11 @@ const Navbar = () => {
           <li className="text-xl font-bold hover:text-indigo-500 duration-200 hover:duration-200">
             <LinkScroll to="about" smooth={true} duration={500}>
               About
+            </LinkScroll>
+          </li>
+          <li className="text-xl font-bold hover:text-indigo-500 duration-200 hover:duration-200">
+            <LinkScroll to="experience" smooth={true} duration={500}>
+              Experience
             </LinkScroll>
           </li>
           <li className="text-xl font-bold hover:text-indigo-500 duration-200 hover:duration-200">
@@ -103,6 +108,16 @@ const Navbar = () => {
             duration={500}
           >
             About
+          </LinkScroll>
+        </li>
+        <li className="py-6 text-5xl font-bold hover:text-indigo-500 hover:duration-200 duration-200">
+          <LinkScroll
+            onClick={handleClick}
+            to="experience"
+            smooth={true}
+            duration={500}
+          >
+            Experience
           </LinkScroll>
         </li>
         <li className="py-6 text-5xl font-bold hover:text-indigo-500 hover:duration-200 duration-200">

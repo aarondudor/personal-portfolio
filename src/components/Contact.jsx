@@ -2,7 +2,7 @@ import React from "react";
 import { useForm, ValidationError } from "@formspree/react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdOutlineContactPage } from "react-icons/md";
-import Resume from "../assets/Resume_SoftwareDev.pdf";
+import Resume from "../assets/Resume_AaronDudor_2023.pdf";
 
 const Contact = () => {
   const openInNewTab = (url) => {
