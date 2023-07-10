@@ -23,7 +23,7 @@ const Projects = () => {
           >
             <div className="opacity-0 group-hover:opacity-100 duration-100 hover:duration-100">
               <span className="text-md sm:text-xl font-bold text-white tracking-wider">
-                Office Hour Queue
+                Office Hour Hacks
               </span>
               <div className="pt-3 sm:pt-8 text-center">
                 <a href="">
