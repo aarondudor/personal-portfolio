@@ -15,7 +15,7 @@ const Experience = () => {
           <p className="text-3xl md:text-4xl lg:text-5xl font-bold inline border-b-8 border-indigo-500 text-white">
             Experience
           </p>
-          <p className="pt-8 text-md md:text-lg lg:text-xl w-full">
+          <p className="pt-6 lg:pt-8 text-md md:text-lg lg:text-xl w-full">
             These are my most recent work experiences. Additional information
             can be found on my{" "}
             <a
