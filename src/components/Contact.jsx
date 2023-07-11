@@ -69,8 +69,8 @@ const Contact = () => {
           Submit
         </button>
       </form>
-      <div className="lg:hidden flex left-1 pt-8">
-        <ul className="flex flex-col md:flex-row gap-6 text-white">
+      <div className="lg:hidden flex left-1 pt-6">
+        <ul className="flex flex-col md:flex-row gap-4 text-white">
           <li>
             <div
               onClick={() =>

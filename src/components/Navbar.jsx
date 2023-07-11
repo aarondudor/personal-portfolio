@@ -33,7 +33,8 @@ const Navbar = () => {
   };
 
   const [helpNav, setHelp] = useState(false);
-  const handleHelpClick = () => setHelp(!helpNav);
+  const handleHelp = () => setHelp(true);
+  const handleHelpOff = () => setHelp(false);
 
   return (
     <div
@@ -107,13 +108,27 @@ const Navbar = () => {
       </div>
 
       {/* help button */}
-      <div className="hidden fixed bottom-10 right-4">
+      <div className="fixed bottom-8 right-5">
         <button
-          onClick={handleHelpClick}
-          className="rounded-full bg-indigo-400 w-16 h-16 text-4xl font-bold duraiton-300 hover:duration-300 hover:bg-indigo-700"
+          onMouseEnter={handleHelp}
+          onMouseLeave={handleHelpOff}
+          className="rounded-full bg-indigo-400 w-12 h-12 text-3xl font-bold duraiton-300 hover:duration-300 hover:bg-indigo-700"
         >
           ?
         </button>
+      </div>
+
+      {/*help menu */}
+      <div>
+        <p
+          className={
+            !helpNav
+              ? "hidden"
+              : "fixed right-20 bottom-8 bg-indigo-400 text-white text-xs md:text-base max-h-12 w-72 md:w-fit font-bold px-3 py-2 md:p-3 rounded-full"
+          }
+        >
+          To navigate this portfolio, use the navigation bar at the top
+        </p>
       </div>
 
       {/* stacked menu */}

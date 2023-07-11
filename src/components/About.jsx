@@ -24,7 +24,7 @@ const About = () => {
           <p className="pt-4">
             Feel free to contact me with any opportunities!
           </p>
-          <div className="lg:hidden pt-8 mx-auto">
+          <div className="lg:hidden pt-6 md:pt-8 mx-auto">
             <img
               className="shadow shadow-indigo-500 w-2/5 rounded mx-auto"
               src={Portrait}
