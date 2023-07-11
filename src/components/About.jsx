@@ -1,11 +1,11 @@
 import React from "react";
-import Portrait from "assets/professional_pic.png";
+import Portrait from "assets/professional_pic.jpg";
 
 const About = () => {
   return (
     <div id="about" className="w-full h-screen bg-[#0e141f] text-indigo-50">
-      <div className="flex flex-row gap-8 justify-center items-center w-full h-full px-9 mx-auto max-w-[500px] md:max-w-[700px] lg:max-w-[800px] xl:max-w-[1100px]">
-        <div className="flex flex-col text-md md:text-xl lg:text-2xl items-start">
+      <div className="flex flex-row gap-8 justify-center items-center w-full h-full px-9 mx-auto max-w-xl md:max-w-3xl xl:max-w-5xl">
+        <div className="flex flex-col items-start text-sm md:text-lg lg:text-xl">
           <div>
             <p className="text-3xl md:text-4xl lg:text-5xl font-bold inline border-b-8 border-indigo-500 text-white">
               About
@@ -24,17 +24,17 @@ const About = () => {
           <p className="pt-4">
             Feel free to contact me with any opportunities!
           </p>
-          <div className="md:hidden w-36 pt-8 mx-auto">
+          <div className="lg:hidden pt-8 mx-auto">
             <img
-              className="object-contain shadow shadow-indigo-500 rounded mx-auto"
+              className="shadow shadow-indigo-500 w-2/5 rounded mx-auto"
               src={Portrait}
               alt="Portrait picture"
             ></img>
           </div>
         </div>
-        <div className="hidden md:block my-auto pt-8">
+        <div className="hidden lg:block my-auto pt-8">
           <img
-            className="shadow shadow-indigo-500 w-3/4 mx-auto rounded"
+            className="shadow shadow-indigo-500 rounded mx-auto"
             src={Portrait}
             alt="Portrait picture"
           ></img>

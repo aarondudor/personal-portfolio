@@ -10,12 +10,12 @@ const Experience = () => {
       id="experience"
       className="w-full h-screen bg-[#0e141f] text-indigo-50"
     >
-      <div className="max-w-[1000px] mx-auto flex flex-col justify-center w-full h-full">
+      <div className="max-w-xl md:max-w-3xl xl:max-w-5xl mx-auto flex flex-col justify-center w-full h-full">
         <div className="px-9">
-          <p className="md:text-5xl text-3xl font-bold inline border-b-8 border-indigo-500 text-white">
+          <p className="text-3xl md:text-4xl lg:text-5xl font-bold inline border-b-8 border-indigo-500 text-white">
             Experience
           </p>
-          <p className="pt-8 text-l md:text-xl w-full">
+          <p className="pt-8 text-sm md:text-lg lg:text-xl w-full">
             These are my most recent work experiences. Additional information
             can be found on my{" "}
             <a
@@ -28,15 +28,15 @@ const Experience = () => {
           </p>
         </div>
         <div className="w-full max-w-[1000px] mx-auto px-9 flex flex-col justify-center">
-          <ul className="text-md cursor-text">
+          <ul className="text-base cursor-text">
             <div className="pt-4">
-              <li className="text-xl md:text-2xl font-bold cursor-text text-indigo-400">
+              <li className="text-base md:text-xl lg:text-2xl font-bold cursor-text text-indigo-400">
                 Mobile Support Technician
               </li>
-              <li className="text-md md:text-lg cursor-text">
+              <li className="text-sm md:text-base lg:text-lg cursor-text">
                 Apex Systems | Madison, WI | June 2023 - Present
               </li>
-              <ol className="list-disc list-inside px-5 text-sm md:text-md">
+              <ol className="list-disc list-inside px-5 text-xs md:text-base">
                 <li className="cursor-text">
                   Installed and configured mobile applications for 1,300+
                   employees, maintaining a 100% successful installation rate
@@ -52,13 +52,13 @@ const Experience = () => {
               </ol>
             </div>
             <div className="pt-4">
-              <li className="text-xl md:text-2xl font-bold cursor-text text-indigo-400">
+              <li className="text-base md:text-xl lg:text-2xl font-bold cursor-text text-indigo-400">
                 Help Desk Technician
               </li>
-              <li className="text-md md:text-lg cursor-text">
+              <li className="text-sm md:text-base lg:text-lg cursor-text">
                 WCER Research IT | Madison, WI | September 2021 - May 2023
               </li>
-              <ol className="list-disc list-inside px-5 text-sm md:text-md">
+              <ol className="list-disc list-inside px-5 text-xs md:text-base">
                 <li className="cursor-text">
                   Monitored support request queue and ensured clear
                   communication for 600+ clientele

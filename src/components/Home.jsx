@@ -13,11 +13,11 @@ const Home = () => {
 
   return (
     <div id="home" className="w-full h-screen bg-[#0e141f]">
-      <div className="max-w-[500px] md:max-w-[600px] lg:max-w-[800px] xl:max-w-[1100px] mx-auto px-9 flex flex-col justify-center h-full">
-        <p className="text-indigo-300 text-xl md:text-4xl italic py-1">
+      <div className="max-w-xl md:max-w-3xl xl:max-w-5xl mx-auto px-9 flex flex-col justify-center h-full">
+        <p className="text-indigo-300 text-2xl md:text-4xl italic py-1">
           Hi, my name is...
         </p>
-        <h1 className="text-white text-4xl md:text-7xl font-bold pb-2">
+        <h1 className="text-white text-4xl md:text-6xl font-bold pb-2">
           Aaron Dudor
         </h1>
         <h2 className="text-white text-4xl md:text-6xl font-bold">
@@ -32,7 +32,7 @@ const Home = () => {
         </p>
         <div>
           <LinkScroll to="projects" smooth={true} duration={500}>
-            <button className="text-white group font-bold text-md border-2 px-6 py-3 my-2 flex items-center duration-300 hover:bg-indigo-500 hover:border-indigo-500 hover:duration-300">
+            <button className="text-white group font-bold text-base border-2 px-6 py-3 my-2 flex items-center duration-300 hover:bg-indigo-500 hover:border-indigo-500 hover:duration-300">
               View Work
             </button>
           </LinkScroll>

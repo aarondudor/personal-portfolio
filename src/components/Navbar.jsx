@@ -33,7 +33,7 @@ const Navbar = () => {
   };
 
   const [helpNav, setHelp] = useState(false);
-  const handleHelpClick = () => setIsHovered1(!helpNav);
+  const handleHelpClick = () => setHelp(!helpNav);
 
   return (
     <div
@@ -106,15 +106,6 @@ const Navbar = () => {
         </ul>
       </div>
 
-      {/* stacked menu */}
-      <div onClick={handleClick} className="lg:hidden z-50">
-        {!nav ? (
-          <FaBars size="30" color="#fff" />
-        ) : (
-          <FaTimes size="30" color="#fff" className="z-50" />
-        )}
-      </div>
-
       {/* help button */}
       <div className="hidden fixed bottom-10 right-4">
         <button
@@ -125,15 +116,24 @@ const Navbar = () => {
         </button>
       </div>
 
+      {/* stacked menu */}
+      <div onClick={handleClick} className="lg:hidden z-50">
+        {!nav ? (
+          <FaBars size="30" color="#fff" />
+        ) : (
+          <FaTimes size="30" color="#fff" />
+        )}
+      </div>
+
       {/* mobile menu */}
       <ul
         className={
           !nav
             ? "hidden"
-            : "absolute z-50 top-0 left-0 w-full h-screen bg-[#0e141f] text-white flex flex-col justify-center items-center"
+            : "absolute z-40 top-0 left-0 w-full h-screen bg-[#0e141f] text-white flex flex-col justify-center items-center"
         }
       >
-        <li className="py-6 text-5xl font-bold hover:text-indigo-500 hover:duration-200 duration-200">
+        <li className="pb-4 md:pb-6 text-4xl md:text-6xl font-bold hover:text-indigo-500 hover:duration-200 duration-200">
           <LinkScroll
             onClick={handleClick}
             to="home"
@@ -143,7 +143,7 @@ const Navbar = () => {
             Home
           </LinkScroll>
         </li>
-        <li className="py-6 text-5xl font-bold hover:text-indigo-500 hover:duration-200 duration-200">
+        <li className="py-4 md:py-6 text-4xl md:text-6xl font-bold hover:text-indigo-500 hover:duration-200 duration-200">
           <LinkScroll
             onClick={handleClick}
             to="about"
@@ -153,7 +153,7 @@ const Navbar = () => {
             About
           </LinkScroll>
         </li>
-        <li className="py-6 text-5xl font-bold hover:text-indigo-500 hover:duration-200 duration-200">
+        <li className="py-4 md:py-6 text-4xl md:text-6xl font-bold hover:text-indigo-500 hover:duration-200 duration-200">
           <LinkScroll
             onClick={handleClick}
             to="experience"
@@ -163,7 +163,7 @@ const Navbar = () => {
             Experience
           </LinkScroll>
         </li>
-        <li className="py-6 text-5xl font-bold hover:text-indigo-500 hover:duration-200 duration-200">
+        <li className="py-4 md:py-6 text-4xl md:text-6xl font-bold hover:text-indigo-500 hover:duration-200 duration-200">
           <LinkScroll
             onClick={handleClick}
             to="skills"
@@ -173,7 +173,7 @@ const Navbar = () => {
             Skills
           </LinkScroll>
         </li>
-        <li className="py-6 text-5xl font-bold hover:text-indigo-500 hover:duration-200 duration-200">
+        <li className="py-4 md:py-6 text-4xl md:text-6xl font-bold hover:text-indigo-500 hover:duration-200 duration-200">
           <LinkScroll
             onClick={handleClick}
             to="projects"
@@ -183,7 +183,7 @@ const Navbar = () => {
             Projects
           </LinkScroll>
         </li>
-        <li className="py-6 text-5xl font-bold hover:text-indigo-500 hover:duration-200 duration-200">
+        <li className="pt-4 md:pt-6 text-4xl md:text-6xl font-bold hover:text-indigo-500 hover:duration-200 duration-200">
           <LinkScroll
             onClick={handleClick}
             to="contact"
@@ -196,14 +196,14 @@ const Navbar = () => {
       </ul>
 
       {/* icon menu */}
-      <div className="hidden lg:flex fixed top-1/3 left-2">
+      <div className="hidden lg:flex fixed left-1 h-full items-center top-0">
         <ul className="flex flex-col gap-4">
           <li className="cursor-default">
             <div
               onMouseEnter={handleHover1}
               onMouseLeave={handleHoverOff1}
               onClick={() =>
-                openInNewTab("https://www.linkedin.com/in/aarondudor/")
+                openInNewTab("https://www.linkedin.com/in/aarondudor")
               }
               className="w-16 h-16 bg-indigo-400 rounded-full flex items-center justify-center transform hover:w-32 hover:duration-300 hover:bg-indigo-700 duration-300 cursor-pointer"
             >

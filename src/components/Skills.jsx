@@ -14,17 +14,17 @@ import GIT from "../assets/git.png";
 const Skills = () => {
   return (
     <div id="skills" className="w-full h-screen bg-[#0e141f] text-indigo-50">
-      <div className="max-w-[1000px] mx-auto flex flex-col justify-center w-full h-full">
+      <div className="max-w-xl md:max-w-3xl xl:max-w-5xl mx-auto flex flex-col justify-center w-full h-full">
         <div className="px-9">
-          <p className="md:text-5xl text-3xl font-bold inline border-b-8 border-indigo-500 text-white">
+          <p className="text-3xl md:text-4xl lg:text-5xl font-bold inline border-b-8 border-indigo-500 text-white">
             Skills
           </p>
-          <p className="pt-8 pb-6 text-l md:text-xl w-full">
+          <p className="pt-8 pb-6 text-sm md:text-lg lg:text-xl w-full">
             These are technologies that I currently work with and have used in
             the past.
           </p>
         </div>
-        <div className="w-full grid grid-cols-3 md:grid-cols-5 sm:grid-cols-4 gap-y-4 text-center pt-5 text-xl font-semibold">
+        <div className="w-full max-w-xs sm:max-w-lg md:max-w-2xl lg:max-w-4xl mx-auto grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-0 gap-y-4 text-center pt-5 text-xl font-semibold">
           <div className="hover:scale-110 duration-500">
             <img src={HTML} alt="HTML logo" className="w-10 sm:w-20 mx-auto" />
             <p className="my-3">HTML</p>
