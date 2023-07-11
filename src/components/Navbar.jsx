@@ -108,7 +108,7 @@ const Navbar = () => {
       </div>
 
       {/* help button */}
-      <div className="fixed bottom-8 right-5">
+      <div className="hidden fixed bottom-8 right-5">
         <button
           onMouseEnter={handleHelp}
           onMouseLeave={handleHelpOff}
