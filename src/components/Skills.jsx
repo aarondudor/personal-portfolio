@@ -19,7 +19,7 @@ const Skills = () => {
           <p className="text-3xl md:text-4xl lg:text-5xl font-bold inline border-b-8 border-indigo-500 text-white">
             Skills
           </p>
-          <p className="pt-8 pb-6 text-sm md:text-lg lg:text-xl w-full">
+          <p className="pt-8 pb-4 text-md md:text-lg lg:text-xl w-full">
             These are technologies that I currently work with and have used in
             the past.
           </p>

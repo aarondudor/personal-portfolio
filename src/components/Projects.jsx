@@ -10,7 +10,7 @@ const Projects = () => {
           <p className="text-3xl md:text-4xl lg:text-5xl font-bold inline border-b-8 border-indigo-500 text-white">
             Projects
           </p>
-          <p className="pt-8 pb-6 text-sm md:text-lg lg:text-xl w-full">
+          <p className="pt-8 pb-6 text-md md:text-lg lg:text-xl w-full">
             These are a few notable projects that I have worked on. Hover over
             the images to view the demo or code behind the projects.
           </p>
