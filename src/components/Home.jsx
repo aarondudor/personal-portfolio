@@ -13,9 +13,9 @@ const Home = () => {
 
   return (
     <div id="home" className="w-full h-screen bg-[#0e141f]">
-      <div className="max-w-[1000px] mx-auto px-9 flex flex-col justify-center h-full">
+      <div className="max-w-[500px] md:max-w-[600px] lg:max-w-[800px] xl:max-w-[1100px] mx-auto px-9 flex flex-col justify-center h-full">
         <p className="text-indigo-300 text-xl md:text-4xl italic py-1">
-          Hi, my name is
+          Hi, my name is...
         </p>
         <h1 className="text-white text-4xl md:text-7xl font-bold pb-2">
           Aaron Dudor

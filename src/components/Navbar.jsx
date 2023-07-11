@@ -32,6 +32,9 @@ const Navbar = () => {
     window.open(url, "_blank", "noreferrer");
   };
 
+  const [helpNav, setHelp] = useState(false);
+  const handleHelpClick = () => setIsHovered1(!helpNav);
+
   return (
     <div
       id="nav"
@@ -39,34 +42,64 @@ const Navbar = () => {
     >
       {/* menu */}
       <div>
-        <ul className="hidden md:flex">
-          <li className="text-xl font-bold hover:text-indigo-500 duration-200 hover:duration-200">
-            <LinkScroll to="home" smooth={true} duration={500}>
+        <ul className="hidden lg:flex">
+          <li className="cursor-default">
+            <LinkScroll
+              to="home"
+              smooth={true}
+              duration={500}
+              className="text-xl font-bold cursor-pointer hover:text-indigo-500 duration-200 hover:duration-200"
+            >
               Home
             </LinkScroll>
           </li>
-          <li className="text-xl font-bold hover:text-indigo-500 duration-200 hover:duration-200">
-            <LinkScroll to="about" smooth={true} duration={500}>
+          <li className="cursor-default">
+            <LinkScroll
+              to="about"
+              smooth={true}
+              duration={500}
+              className="text-xl font-bold cursor-pointer hover:text-indigo-500 duration-200 hover:duration-200"
+            >
               About
             </LinkScroll>
           </li>
-          <li className="text-xl font-bold hover:text-indigo-500 duration-200 hover:duration-200">
-            <LinkScroll to="experience" smooth={true} duration={500}>
+          <li className="cursor-default">
+            <LinkScroll
+              to="experience"
+              smooth={true}
+              duration={500}
+              className="text-xl font-bold cursor-pointer hover:text-indigo-500 duration-200 hover:duration-200"
+            >
               Experience
             </LinkScroll>
           </li>
-          <li className="text-xl font-bold hover:text-indigo-500 duration-200 hover:duration-200">
-            <LinkScroll to="skills" smooth={true} duration={500}>
+          <li className="cursor-default">
+            <LinkScroll
+              to="skills"
+              smooth={true}
+              duration={500}
+              className="text-xl font-bold cursor-pointer hover:text-indigo-500 duration-200 hover:duration-200"
+            >
               Skills
             </LinkScroll>
           </li>
-          <li className="text-xl font-bold hover:text-indigo-500 duration-200 hover:duration-200">
-            <LinkScroll to="projects" smooth={true} duration={500}>
+          <li className="cursor-default">
+            <LinkScroll
+              to="projects"
+              smooth={true}
+              duration={500}
+              className="text-xl font-bold cursor-pointer hover:text-indigo-500 duration-200 hover:duration-200"
+            >
               Projects
             </LinkScroll>
           </li>
-          <li className="text-xl font-bold hover:text-indigo-500 duration-200 hover:duration-200">
-            <LinkScroll to="contact" smooth={true} duration={500}>
+          <li className="cursor-default">
+            <LinkScroll
+              to="contact"
+              smooth={true}
+              duration={500}
+              className="text-xl font-bold cursor-pointer hover:text-indigo-500 duration-200 hover:duration-200"
+            >
               Contact
             </LinkScroll>
           </li>
@@ -74,12 +107,22 @@ const Navbar = () => {
       </div>
 
       {/* stacked menu */}
-      <div onClick={handleClick} className="md:hidden z-10">
+      <div onClick={handleClick} className="lg:hidden z-50">
         {!nav ? (
           <FaBars size="30" color="#fff" />
         ) : (
-          <FaTimes size="30" color="#fff" />
+          <FaTimes size="30" color="#fff" className="z-50" />
         )}
+      </div>
+
+      {/* help button */}
+      <div className="hidden fixed bottom-10 right-4">
+        <button
+          onClick={handleHelpClick}
+          className="rounded-full bg-indigo-400 w-16 h-16 text-4xl font-bold duraiton-300 hover:duration-300 hover:bg-indigo-700"
+        >
+          ?
+        </button>
       </div>
 
       {/* mobile menu */}
@@ -153,52 +196,52 @@ const Navbar = () => {
       </ul>
 
       {/* icon menu */}
-      <div className="hidden lg:flex fixed top-1/4 left-1">
+      <div className="hidden lg:flex fixed top-1/3 left-2">
         <ul className="flex flex-col gap-4">
-          <li>
+          <li className="cursor-default">
             <div
               onMouseEnter={handleHover1}
               onMouseLeave={handleHoverOff1}
               onClick={() =>
                 openInNewTab("https://www.linkedin.com/in/aarondudor/")
               }
-              className="w-16 h-16 bg-indigo-400 rounded-full flex items-center justify-center transform hover:w-32 hover:duration-200 hover:bg-indigo-600 duration-200"
+              className="w-16 h-16 bg-indigo-400 rounded-full flex items-center justify-center transform hover:w-32 hover:duration-300 hover:bg-indigo-700 duration-300 cursor-pointer"
             >
               <a className="text-xl font-bold">
                 {!isHovered1 ? <FaLinkedin size={30} /> : <p>LinkedIn</p>}
               </a>
             </div>
           </li>
-          <li>
+          <li className="cursor-default">
             <div
               onMouseEnter={handleHover2}
               onMouseLeave={handleHoverOff2}
               onClick={() => openInNewTab("https://www.github.com/aarondudor")}
-              className="w-16 h-16 bg-indigo-400 rounded-full flex items-center justify-center transform hover:w-32 hover:duration-200 hover:bg-indigo-600 duration-200"
+              className="w-16 h-16 bg-indigo-400 rounded-full flex items-center justify-center transform hover:w-32 hover:duration-300 hover:bg-indigo-700 duration-300 cursor-pointer"
             >
               <a className="text-xl font-bold">
                 {!isHovered2 ? <FaGithub size={30} /> : <p>Github</p>}
               </a>
             </div>
           </li>
-          <li>
+          <li className="cursor-default">
             <div
               onMouseEnter={handleHover3}
               onMouseLeave={handleHoverOff3}
               onClick={() => openMailCleint("aarondudor@gmail.com")}
-              className="w-16 h-16 bg-indigo-400 rounded-full flex items-center justify-center transform hover:w-32 hover:duration-200 hover:bg-indigo-600 duration-200"
+              className="w-16 h-16 bg-indigo-400 rounded-full flex items-center justify-center transform hover:w-32 hover:duration-300 hover:bg-indigo-700 duration-300 cursor-pointer"
             >
               <a className="text-xl font-bold">
                 {!isHovered3 ? <HiOutlineMail size={30} /> : <p>Email</p>}
               </a>
             </div>
           </li>
-          <li>
+          <li className="cursor-default">
             <div
               onMouseEnter={handleHover4}
               onMouseLeave={handleHoverOff4}
               onClick={() => openInNewTab(Resume)}
-              className="w-16 h-16 bg-indigo-400 rounded-full flex items-center justify-center transform hover:w-32 hover:duration-200 hover:bg-indigo-600 duration-200"
+              className="w-16 h-16 bg-indigo-400 rounded-full flex items-center justify-center transform hover:w-32 hover-duration-300 hover:bg-indigo-700 duration-300 cursor-pointer"
             >
               <a className="text-xl font-bold">
                 {!isHovered4 ? (
