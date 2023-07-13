@@ -20,8 +20,8 @@ const Skills = () => {
             Skills
           </p>
           <p className="pt-6 lg:pt-8 pb-4 text-md md:text-lg lg:text-xl w-full">
-            These are technologies that I currently work with and have used in
-            the past.
+            These are some of the technologies that I currently work with and
+            have used in the past.
           </p>
         </div>
         <div className="w-full max-w-xs sm:max-w-lg md:max-w-2xl lg:max-w-4xl mx-auto grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-0 gap-y-4 text-center pt-5 text-xl font-semibold">
