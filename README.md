@@ -1,6 +1,4 @@
-This project is a personal portfolio that was created through a Create React App bootstrap and developed using JSX and Tailwind CSS.
-
-To view live website, visit [aarondudor.dev](https://www.aarondudor.dev)
+This project is a personal portfolio that was created through a Create React App bootstrap and developed using JSX and Tailwind CSS. Deployed using Vercel at [aarondudor.dev](https://www.aarondudor.dev)
 
 # Getting Started with Create React App
 
