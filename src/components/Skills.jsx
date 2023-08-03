@@ -5,7 +5,7 @@ import CSS from "../assets/css.png";
 import JAVASCRIPT from "../assets/javascript.png";
 import REACT from "../assets/react.png";
 import TAILWIND from "../assets/tailwind.png";
-import THREE from "../assets/three.png";
+import NEXT from "../assets/next.png";
 import SQL from "../assets/sql.png";
 import JAVA from "../assets/java.png";
 import PYTHON from "../assets/python.png";
@@ -62,6 +62,10 @@ const Skills = () => {
             <p className="my-3">React</p>
           </div>
           <div className="hover:scale-110 duration-500">
+            <img src={NEXT} alt="Next logo" className="w-10 sm:w-20 mx-auto" />
+            <p className="my-3">Next</p>
+          </div>
+          <div className="hover:scale-110 duration-500">
             <img
               src={TAILWIND}
               alt="Tailwind logo"
@@ -69,17 +73,9 @@ const Skills = () => {
             />
             <p className="my-3">Tailwind</p>
           </div>
-          {/*<div className="hover:scale-110 duration-500">
+          <div className="hover:scale-110 duration-500">
             <img src={SQL} alt="SQL logo" className="w-10 sm:w-20 mx-auto" />
             <p className="my-3">SQL</p>
-  </div>*/}
-          <div className="hover:scale-110 duration-500">
-            <img
-              src={THREE}
-              alt="Three logo"
-              className="w-10 sm:w-20 mx-auto"
-            />
-            <p className="my-3">Three.js</p>
           </div>
           <div className="hover:scale-110 duration-500">
             <img src={GIT} alt="Git logo" className="w-10 sm:w-20 mx-auto" />

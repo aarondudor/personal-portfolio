@@ -70,6 +70,9 @@ const Projects = () => {
                     Code
                   </button>
                 </a>
+                <p className="font-bold px-4 pt-2 text-sm">
+                  Demo unavailable, explanation in GitHub repo
+                </p>
               </div>
             </div>
           </div>
