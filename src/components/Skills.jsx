@@ -69,10 +69,10 @@ const Skills = () => {
             />
             <p className="my-3">Tailwind</p>
           </div>
-          <div className="hover:scale-110 duration-500">
+          {/*<div className="hover:scale-110 duration-500">
             <img src={SQL} alt="SQL logo" className="w-10 sm:w-20 mx-auto" />
             <p className="my-3">SQL</p>
-          </div>
+  </div>*/}
           <div className="hover:scale-110 duration-500">
             <img
               src={THREE}
