@@ -6,7 +6,7 @@ import JAVASCRIPT from "../assets/javascript.png";
 import REACT from "../assets/react.png";
 import TAILWIND from "../assets/tailwind.png";
 import THREE from "../assets/three.png";
-import MYSQL from "../assets/mysql.png";
+import SQL from "../assets/sql.png";
 import JAVA from "../assets/java.png";
 import PYTHON from "../assets/python.png";
 import GIT from "../assets/git.png";
@@ -70,12 +70,8 @@ const Skills = () => {
             <p className="my-3">Tailwind</p>
           </div>
           <div className="hover:scale-110 duration-500">
-            <img
-              src={MYSQL}
-              alt="MySQL logo"
-              className="w-10 sm:w-20 mx-auto"
-            />
-            <p className="my-3">MySQL</p>
+            <img src={SQL} alt="SQL logo" className="w-10 sm:w-20 mx-auto" />
+            <p className="my-3">SQL</p>
           </div>
           <div className="hover:scale-110 duration-500">
             <img
